@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // Program to find factorial of a number using recursion
-public class Factorial {
+class RecursiveFactorial {
     
     // Recursive method - calls itself to calculate factorial
     static long factorial(int n) {
