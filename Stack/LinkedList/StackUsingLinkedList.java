@@ -86,6 +86,7 @@ public class StackUsingLinkedList {
                 case 5: display(); break;
                 case 6:
                     System.out.println("Exiting...");
+                    sc.close();
                     return;
                 default:
                     System.out.println("Wrong choice. Please choose a valid option.");

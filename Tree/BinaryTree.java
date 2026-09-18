@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 // Binary Tree - Demonstrate Inorder, Preorder, Postorder traversal
 // Tree is built manually in code (hardcoded values)
 public class BinaryTree {

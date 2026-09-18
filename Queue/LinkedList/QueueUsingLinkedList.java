@@ -1,3 +1,5 @@
+package Queue.LinkedList;
+
 import java.util.Scanner;
 
 // Queue implementation using Linked List
@@ -100,6 +102,7 @@ public class QueueUsingLinkedList {
                 case 6: display(); break;
                 case 7:
                     System.out.println("Exiting...");
+                    sc.close();
                     return;
                 default:
                     System.out.println("Wrong Choice. Please enter a valid choice.");
