@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class MostExpensiveBook {
     static class Book {
@@ -18,14 +19,35 @@ public class MostExpensiveBook {
         Book[] books = new Book[5];
 
         for (int i = 0; i < books.length; i++) {
-            System.out.print("Enter book id: ");
-            int id = scanner.nextInt();
-            scanner.nextLine();
+            int id = 0;
+            while (true) {
+                try {
+                    System.out.print("Enter book id: ");
+                    id = scanner.nextInt();
+                    scanner.nextLine();
+                    break;
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input. Please enter a valid number for the ID.");
+                    scanner.nextLine();
+                }
+            }
+
             System.out.print("Enter book title: ");
             String title = scanner.nextLine();
-            System.out.print("Enter book price: ");
-            double price = scanner.nextDouble();
-            scanner.nextLine();
+
+            double price = 0.0;
+            while (true) {
+                try {
+                    System.out.print("Enter book price: ");
+                    price = scanner.nextDouble();
+                    scanner.nextLine();
+                    break;
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input. Please enter a valid number for the price.");
+                    scanner.nextLine();
+                }
+            }
+
             books[i] = new Book(id, title, price);
         }
 
@@ -40,6 +62,7 @@ public class MostExpensiveBook {
         System.out.println("Book id: " + expensiveBook.id);
         System.out.println("Title: " + expensiveBook.title);
         System.out.println("Price: " + expensiveBook.price);
+        
         scanner.close();
     }
 }
