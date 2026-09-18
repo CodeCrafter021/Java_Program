@@ -12,6 +12,7 @@ public class DisplayContentsInUppercaseAndLowercase {
         File file = new File(filename);
         if (!file.exists()) {
             System.out.println("Error: Could not open file.");
+            sc.close();
             return;
         }
         
@@ -32,5 +33,6 @@ public class DisplayContentsInUppercaseAndLowercase {
         }
         fr.close();
         System.out.println();
+        sc.close();
     }
 }

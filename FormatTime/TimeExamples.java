@@ -1,4 +1,4 @@
-package Java.FormatTime;
+package FormatTime;
 
 import java.time.Instant;
 import java.time.ZoneId;

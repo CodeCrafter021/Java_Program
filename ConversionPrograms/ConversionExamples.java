@@ -1,4 +1,4 @@
-package Java.ConversionPrograms;
+package ConversionPrograms;
 
 import java.util.Locale;
 

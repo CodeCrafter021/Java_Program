@@ -1,4 +1,4 @@
-package Java.ClassesAndObjectsPrograms;
+package ClassesAndObjectsPrograms;
 
 interface Printable {
     void print();

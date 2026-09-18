@@ -1,4 +1,4 @@
-package Java.Miscellaneous;
+package Miscellaneous;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package Java.MultithreadingPrograms;
+package MultithreadingPrograms;
 
 public class ThreadExamples {
     public static void main(String[] args) throws InterruptedException {

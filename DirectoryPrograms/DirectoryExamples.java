@@ -1,4 +1,4 @@
-package Java.DirectoryPrograms;
+package DirectoryPrograms;
 
 import java.io.IOException;
 import java.nio.file.Files;
